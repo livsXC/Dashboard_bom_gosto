@@ -81,7 +81,6 @@ if not df_filtrado.empty:
     despesa_total = df_filtrado['despesa'].sum()
     lucro_liquido = receita_total - despesa_total
     ticket_medio = df_filtrado['receita'].mean()
-    produto_mais_vendido = df_filtrado['produto'].mode()[0]
 else:
     receita_total, despesa_total, lucro_liquido, ticket_medio, produto_mais_vendido = 0, 0, 0, 0, ""
 
